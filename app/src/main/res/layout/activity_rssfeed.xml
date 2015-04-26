@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".RssfeedActivity">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        class="rssfeed.android.example.com.rssreader.MyListFragment"></fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        class="rssfeed.android.example.com.rssreader.DetailFragment" >
+    </fragment>
+
+</LinearLayout>
